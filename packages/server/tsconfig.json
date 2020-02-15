@@ -1,0 +1,12 @@
+{
+  "extends": "../worker/tsconfig.json",
+  "include": [
+    "./src/*.ts",
+    "./src/**/*.ts",
+    "./node_modules/@cloudflare/workers-types/index.d.ts"
+  ],
+  "typeAcquisition": {
+    "include": ["jest"]
+  },
+  "compilerOptions": { "noImplicitAny": false }
+}

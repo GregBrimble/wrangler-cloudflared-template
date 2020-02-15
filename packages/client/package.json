@@ -1,0 +1,54 @@
+{
+  "name": "client",
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "clean": "rimraf .expo web-build",
+    "clean:node": "rimraf node_modules package-lock.json",
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "build:web": "expo build:web",
+    "eject": "expo eject",
+    "lint": "eslint '*.tsx' && prettier -c '*.tsx'",
+    "format": "eslint --fix '*.tsx' && prettier --write '*.tsx'"
+  },
+  "dependencies": {
+    "expo": "~36.0.0",
+    "react": "~16.9.0",
+    "react-dom": "~16.9.0",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-36.0.0.tar.gz",
+    "react-native-screens": "2.0.0-alpha.12",
+    "react-native-web": "~0.11.7"
+  },
+  "eslintConfig": {
+    "extends": [
+      "universe/native",
+      "universe/shared/typescript-analysis"
+    ],
+    "overrides": [
+      {
+        "files": [
+          "*.ts",
+          "*.tsx",
+          "*.d.ts"
+        ],
+        "parserOptions": {
+          "project": "./tsconfig.json"
+        }
+      }
+    ]
+  },
+  "devDependencies": {
+    "@types/react": "~16.9.0",
+    "@types/react-native": "~0.60.23",
+    "@babel/core": "^7.0.0",
+    "babel-preset-expo": "~8.0.0",
+    "eslint": "6.8.0",
+    "eslint-config-universe": "2.2.0",
+    "prettier": "1.19.1",
+    "rimraf": "3.0.2",
+    "typescript": "~3.6.3"
+  },
+  "private": true
+}
