@@ -6,7 +6,7 @@ This repository is an template, demonstrating Wrangler's new local development s
 
 This template is an example of a full-stack application deployed solely on Cloudflare's edge. It also allows for rapid development, with a hot-reloading client and automatically updating server.
 
-**Demo video**
+**Demo video (OUTDATED)**
 
 [![Demo video](https://i3.ytimg.com/vi/rPow01rsQuo/hqdefault.jpg)](https://www.youtube.com/watch?v=rPow01rsQuo)
 
@@ -38,6 +38,8 @@ This template is an example of a full-stack application deployed solely on Cloud
 1. `npm run start:client`: serves a hot-reloading version of the client at http://localhost:19006/.
 
 1. `npm start`: creates a tunnel for the client, and runs `wrangler dev` pointing through to the exposed tunnel.
+
+1. Navigate to [`http://localhost:8787/`](http://localhost:8787/).
 
 ### Behind the Scenes
 
