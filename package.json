@@ -10,7 +10,7 @@
     "start:worker": "wrangler dev",
     "build": "lerna run --stream --scope client build:web",
     "predeploy": "npm run build",
-    "deploy": "wrangler publish",
+    "deploy": "wrangler publish --env production",
     "lint": "lerna run lint",
     "format": "lerna run format"
   },
