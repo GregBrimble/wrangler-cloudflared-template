@@ -37,6 +37,10 @@ This template is an example of a full-stack application deployed solely on Cloud
 
 1. `npm run start:client`: serves a hot-reloading version of the client at http://localhost:19006/.
 
+1. `npm start`: creates a tunnel for the client, and runs `wrangler dev` pointing through to the exposed tunnel.
+
+### Behind the Scenes
+
 1. `npm run start:tunnel`: creates a tunnel for the client, exposing it to the internet.
 
 1. `npm run start:worker -- --host [host]` where `[host]` is the URL of the `cloudflared` tunnel e.g. https://mineral-shop-costumes-till.trycloudflare.com. This serves the worker script locally on http://localhost:8787/:
@@ -61,7 +65,7 @@ This template is an example of a full-stack application deployed solely on Cloud
 
 # Roadmap
 
-- Automatically pull in the `cloudflared` tunnel address when starting `wrangler dev`.
+- ~~Automatically pull in the `cloudflared` tunnel address when starting `wrangler dev`.~~ Done!
 - Tests
 - Full CI/CD
 - Greenkeeper & Mergify
